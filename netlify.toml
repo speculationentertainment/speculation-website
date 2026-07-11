@@ -1,0 +1,6 @@
+# Netlify configuration for Speculation Entertainment
+# On every deploy, Netlify runs build.js (which refreshes the gallery
+# list) and then publishes the whole site folder.
+[build]
+  command = "node build.js"
+  publish = "."

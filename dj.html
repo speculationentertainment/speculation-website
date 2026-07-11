@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mobile DJ &amp; Entertainment | Speculation Entertainment</title>
+  <meta name="description" content="Mobile DJ, event hosting, emcee and karaoke for weddings, parties, corporate events and schools across Central Texas. Transparent package pricing."/>
+  <link rel="icon" href="assets/emblem.png"/>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Outfit:wght@300;400;500&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+  <div class="atmosphere"></div>
+  <div class="smoke smoke--l"></div>
+  <div class="smoke smoke--r"></div>
+
+  <!-- ── NAV ── -->
+  <header class="nav">
+    <a href="index.html" class="nav-brand">
+      <img src="assets/emblem.png" alt="Speculation Entertainment"/>
+      <span class="nav-brand-text">
+        <span class="nav-brand-name">Speculation</span>
+        <span class="nav-brand-sub">Entertainment</span>
+      </span>
+    </a>
+    <button class="nav-toggle" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="dj.html" class="active">Mobile DJ</a></li>
+        <li><a href="bar.html">Mobile Bar</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#contact" class="nav-cta">Inquire</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ── PAGE HERO ── -->
+    <section class="section section--blue" data-sparks="18" style="padding-top:clamp(140px,16vh,200px); padding-bottom:clamp(64px,8vw,96px);">
+      <div class="wrap">
+        <span class="eyebrow reveal in">Mobile DJ · Hosting · Karaoke</span>
+        <h1 class="display-title reveal in">Mobile DJ &amp;<br/><em>Entertainment</em></h1>
+        <div class="rule reveal in"></div>
+        <p class="lede reveal in">Open-format DJ service, a confident emcee, and karaoke, tuned to your crowd and your run of show. Every package includes professional sound, setup, breakdown and hosting.</p>
+        <div class="reveal in" style="display:flex; gap:16px; flex-wrap:wrap; margin-top:32px;">
+          <a href="#packages" class="btn btn-gold">See Packages</a>
+          <a href="#contact" class="btn btn-ghost">Check My Date</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── SERVICE BOXES (jump links) ── -->
+    <section class="section" style="padding-top:0;">
+      <div class="wrap">
+        <div class="svc-grid">
+          <a href="#packages" class="svc-card reveal">
+            <span class="svc-num">01</span>
+            <h3 class="svc-name">Mobile DJ</h3>
+            <p class="svc-desc">Open-format mixing, pro sound and LED lighting, read the room, fill the floor.</p>
+            <span class="svc-link">Packages &amp; pricing <span class="arrow">→</span></span>
+          </a>
+          <a href="#hosting" class="svc-card reveal">
+            <span class="svc-num">02</span>
+            <h3 class="svc-name">Hosting &amp; Emcee</h3>
+            <p class="svc-desc">Announcements, introductions and run-of-show, a host who keeps it all moving.</p>
+            <span class="svc-link">What's included <span class="arrow">→</span></span>
+          </a>
+          <a href="#weddings" class="svc-card reveal">
+            <span class="svc-num">03</span>
+            <h3 class="svc-name">Weddings</h3>
+            <p class="svc-desc">Reception, cocktail hour and full ceremony production in three clear tiers.</p>
+            <span class="svc-link">Wedding tiers <span class="arrow">→</span></span>
+          </a>
+          <a href="#karaoke" class="svc-card reveal">
+            <span class="svc-num">04</span>
+            <h3 class="svc-name">Karaoke</h3>
+            <p class="svc-desc">Thousands of songs, two wireless mics and a dedicated host all night.</p>
+            <span class="svc-link">Karaoke night <span class="arrow">→</span></span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── EVENTS & PRIVATE PARTIES ── -->
+    <section class="section section--alt" id="packages">
+      <div class="wrap">
+        <div class="center" style="margin-bottom:56px;">
+          <span class="eyebrow reveal">Pricing &amp; Packages</span>
+          <h2 class="display-title reveal">Events &amp; Private Parties</h2>
+          <div class="rule rule--c reveal"></div>
+          <p class="lede reveal">Birthdays, private parties and school events. Every package includes setup, breakdown and emcee service, add hours or extras to build exactly what you need.</p>
+        </div>
+        <div class="pkg-grid" id="event-packages"></div>
+        <p class="note center">Prices are starting points, final quote depends on hours, lighting and add-ons. Travel beyond 30 miles may apply. All prices are subject to applicable sales tax.</p>
+      </div>
+    </section>
+
+    <!-- ── WEDDINGS ── -->
+    <section class="section" id="weddings">
+      <div class="wrap">
+        <div class="center" style="margin-bottom:56px;">
+          <span class="eyebrow reveal">Wedding Services</span>
+          <h2 class="display-title reveal">Your Day, In Tiers</h2>
+          <div class="rule rule--c reveal"></div>
+          <p class="lede reveal">From reception-only to full ceremony, cocktail hour and reception production. Every tier includes setup, breakdown and a dedicated emcee.</p>
+        </div>
+        <div class="pkg-grid" id="wedding-packages"></div>
+        <p class="note center">Prices are starting points. All prices are subject to applicable sales tax.</p>
+      </div>
+    </section>
+
+    <!-- ── HOSTING & EMCEE ── -->
+    <section class="section section--alt" id="hosting">
+      <div class="wrap contact-grid" style="align-items:center;">
+        <div>
+          <span class="eyebrow reveal">Event Hosting &amp; Emcee</span>
+          <h2 class="display-title reveal">A Host Who<br/>Reads the Room</h2>
+          <div class="rule reveal"></div>
+          <p class="lede reveal">Keep your event flowing with a confident emcee who knows how to work a crowd, announcements, introductions and the timeline, handled. Included with every DJ package, or available as a standalone service.</p>
+          <div class="reveal" style="margin-top:24px;">
+            <a href="#contact" class="btn btn-ghost">Ask About Standalone Hosting</a>
+          </div>
+        </div>
+        <ul class="pkg-feats reveal" style="margin:0; font-size:1.08rem;">
+          <li>Announcements &amp; smooth transitions</li>
+          <li>Guest &amp; speaker introductions</li>
+          <li class="hl">Full run-of-show management</li>
+          <li>Crowd engagement &amp; energy</li>
+          <li>Grand entrances &amp; special moments</li>
+          <li>Trivia &amp; interactive segments</li>
+          <li>Wireless microphone included</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ── CORPORATE ── -->
+    <section class="section" id="corporate">
+      <div class="wrap">
+        <div class="center" style="margin-bottom:56px;">
+          <span class="eyebrow reveal">Corporate &amp; Business</span>
+          <h2 class="display-title reveal">Corporate Events</h2>
+          <div class="rule rule--c reveal"></div>
+          <p class="lede reveal">Polished DJ and hosting for company parties, holiday events and business functions across Central Texas and the Austin metro.</p>
+        </div>
+        <div class="pkg-grid" id="corporate-packages"></div>
+        <p class="note center">Prices are starting points. All prices are subject to applicable sales tax.</p>
+      </div>
+    </section>
+
+    <!-- ── KARAOKE ── -->
+    <section class="section section--alt" id="karaoke">
+      <div class="wrap">
+        <div class="center" style="margin-bottom:48px;">
+          <span class="eyebrow reveal">Karaoke Services</span>
+          <h2 class="display-title reveal">Karaoke Night</h2>
+          <div class="rule rule--c reveal"></div>
+          <p class="lede reveal">Professional karaoke hosting for parties, corporate events and private gatherings. Add it to any DJ package and save.</p>
+        </div>
+        <div style="max-width:420px; margin:0 auto;">
+          <div class="pkg-grid" id="karaoke-packages"></div>
+          <div class="callout reveal" style="margin-top:18px;">
+            <span class="callout-icon">✦</span>
+            <div><p class="callout-text">Only <strong>$150</strong> when booked as an add-on to any DJ package.</p></div>
+          </div>
+          <p class="note center">All prices are subject to applicable sales tax.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── SIGNATURE UPGRADES ── -->
+    <section class="section" id="upgrades">
+      <div class="wrap">
+        <div class="center" style="margin-bottom:56px;">
+          <span class="eyebrow reveal">Elevate the Experience</span>
+          <h2 class="display-title reveal">Signature Upgrades &amp; Add-Ons</h2>
+          <div class="rule rule--c reveal"></div>
+          <p class="lede reveal">Premium touches and extras to build exactly the event you want. Mix and match with any package.</p>
+        </div>
+        <div class="upgrades" id="signature-upgrades" data-extras="dj"></div>
+        <p class="note center">Pricing shown is recommended and varies by event. Items without a set price are quoted on request. All prices are subject to applicable sales tax.</p>
+        <div class="callout callout--blue reveal" style="margin-top:40px;">
+          <span class="callout-icon">◈</span>
+          <div>
+            <p class="callout-title">Booking &amp; Deposit</p>
+            <p class="callout-text">A <strong>50% non-refundable deposit</strong> holds your date. The remaining balance is due no less than <strong>two weeks before</strong> your event. Custom quotes available for large or multi-service bookings.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── CONTACT ── -->
+    <section class="section section--blue" id="contact" data-sparks="14">
+      <div class="wrap contact-grid">
+        <div>
+          <span class="eyebrow reveal">Get In Touch</span>
+          <h2 class="display-title reveal">Check Your Date</h2>
+          <div class="rule reveal"></div>
+          <p class="lede reveal">Tell us your date and vision. Robert will get back to you personally, usually within 24 hours.</p>
+          <div class="contact-details reveal">
+            <div class="contact-item">
+              <span class="contact-icon">✆</span>
+              <div><p class="contact-label">Call or Text</p><p class="contact-value"><a href="tel:+12546776287">254-677-6287</a></p></div>
+            </div>
+            <div class="contact-item">
+              <span class="contact-icon">✉</span>
+              <div><p class="contact-label">Email</p><p class="contact-value"><a href="mailto:contact@speculationentertainment.com">contact@speculationentertainment.com</a></p></div>
+            </div>
+            <div class="contact-item">
+              <span class="contact-icon">◈</span>
+              <div><p class="contact-label">Based In</p><p class="contact-value">Central Texas</p></div>
+            </div>
+          </div>
+        </div>
+        <form class="form reveal" data-mailto="contact@speculationentertainment.com">
+          <div class="form-row">
+            <div class="field"><label>First Name</label><input type="text" name="first" placeholder="Jane"/></div>
+            <div class="field"><label>Last Name</label><input type="text" name="last" placeholder="Smith"/></div>
+          </div>
+          <div class="field"><label>Email</label><input type="email" name="email" placeholder="jane@email.com"/></div>
+          <div class="field"><label>Phone</label><input type="tel" name="phone" placeholder="(254) 000-0000"/></div>
+          <div class="form-row">
+            <div class="field">
+              <label>Event Type</label>
+              <select name="type">
+                <option value="">Select…</option>
+                <option>Wedding, Full Package</option>
+                <option>Wedding, Reception + Cocktail</option>
+                <option>Wedding, Reception Only</option>
+                <option>Private Party / Birthday</option>
+                <option>Corporate Event</option>
+                <option>School Event</option>
+                <option>Karaoke Night</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div class="field"><label>Event Date</label><input type="date" name="date"/></div>
+          </div>
+          <div class="field"><label>Location / City</label><input type="text" name="location" placeholder="Killeen, TX"/></div>
+          <div class="field"><label>Tell Us About Your Event</label><textarea name="message" placeholder="Guest count, venue, vision, any special requests…"></textarea></div>
+          <button type="submit" class="btn btn-gold">Send Inquiry</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- ── FOOTER ── -->
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <img src="assets/emblem.png" alt="Speculation Entertainment"/>
+        <div>
+          <div class="footer-brand-name">Speculation</div>
+          <div class="footer-brand-sub">Entertainment</div>
+        </div>
+      </div>
+      <ul class="footer-nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#packages">Events</a></li>
+        <li><a href="#weddings">Weddings</a></li>
+        <li><a href="#corporate">Corporate</a></li>
+        <li><a href="#karaoke">Karaoke</a></li>
+        <li><a href="bar.html">Mobile Bar</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="footer-contact">
+        <a href="tel:+12546776287">254-677-6287</a>
+        <a href="mailto:contact@speculationentertainment.com">contact@speculationentertainment.com</a>
+        <!-- SOCIALS: remove the `hidden` attribute when ready -->
+        <div class="socials" hidden>
+          <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M12 2.2c3.2 0 3.6 0 4.9.07 1.2.06 1.8.25 2.2.42.6.2 1 .5 1.4.9.4.4.7.8.9 1.4.17.4.36 1 .42 2.2.07 1.3.07 1.7.07 4.9s0 3.6-.07 4.9c-.06 1.2-.25 1.8-.42 2.2-.2.6-.5 1-.9 1.4-.4.4-.8.7-1.4.9-.4.17-1 .36-2.2.42-1.3.07-1.7.07-4.9.07s-3.6 0-4.9-.07c-1.2-.06-1.8-.25-2.2-.42-.6-.2-1-.5-1.4-.9-.4-.4-.7-.8-.9-1.4-.17-.4-.36-1-.42-2.2C2.2 15.6 2.2 15.2 2.2 12s0-3.6.07-4.9c.06-1.2.25-1.8.42-2.2.2-.6.5-1 .9-1.4.4-.4.8-.7 1.4-.9.4-.17 1-.36 2.2-.42C8.4 2.2 8.8 2.2 12 2.2z"/></svg></a>
+          <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M14 8.5h2.2V5.3c-.38-.05-1.3-.16-2.37-.16-2.34 0-3.95 1.43-3.95 4.07v2.43H6.9v3.3h3v8.36h3.6v-8.36h2.9l.46-3.3h-3.36V9.6c0-.96.26-1.6 1.6-1.6z"/></svg></a>
+          <a href="#" aria-label="TikTok"><svg viewBox="0 0 24 24"><path d="M16.6 2h-3v13.4a2.6 2.6 0 1 1-2.6-2.6c.27 0 .53.04.78.12V9.85a6 6 0 0 0-.78-.05A5.8 5.8 0 1 0 16.8 15.4V8.6a7.3 7.3 0 0 0 4.2 1.34V6.9a4.3 4.3 0 0 1-4.4-4.9z"/></svg></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span class="footer-copy">© 2026 Speculation Entertainment LLC · Central Texas</span>
+      <span class="footer-copy">Mobile DJ · Mobile Bar · Hosting · Karaoke</span>
+    </div>
+  </footer>
+
+  <script src="site.js"></script>
+
+  <!-- ════════════════════════════════════════════════════════════
+       EDIT YOUR PACKAGES HERE
+       Change a price, name, hours or feature below and it updates
+       the cards automatically. Rules:
+        • price: a NUMBER (e.g. 650) shows as "Starting at $650"
+                 or TEXT (e.g. "Let's Talk") shows with no price prefix
+        • featured: true  → highlighted card with a gold badge
+        • badge: the little label on a featured card
+        • features: list of bullet points. Wrap one in
+                    { text: "…", hl: true } to make it gold.
+       ════════════════════════════════════════════════════════════ -->
+  <script>
+    /* ---- EVENTS & PRIVATE PARTIES ---- */
+    renderPackages('event-packages', [
+      { tier: 'Tier 1', name: 'Essential', price: 550, hours: 'Up to 3 hours',
+        features: ['Up to 3 hours of DJ service','Professional sound system',{text:'Dance floor lighting',hl:true},'Wireless microphone','Emcee included','Music consultation call','Setup & breakdown included'] },
+      { tier: 'Tier 2', name: 'Premier', price: 950, hours: 'Up to 5 hours', featured: true, badge: 'Most Popular',
+        features: ['Up to 5 hours of DJ service','Premium sound system',{text:'8 LED uplights, full atmosphere',hl:true},'Dance floor lighting','Wireless microphone','Emcee included','Music consultation call','Setup & breakdown included'] },
+      { tier: 'Tier 3', name: 'Full Service', price: 1500, hours: 'Up to 8 hours',
+        features: ['Up to 8 hours of DJ service','Premium sound system',{text:'12 LED uplights + fog / haze machine',hl:true},'Dance floor lighting','Wireless microphone','Emcee throughout','Music consultation call','Full event coordination'] }
+    ]);
+
+    /* ---- WEDDINGS ---- */
+    renderPackages('wedding-packages', [
+      { tier: 'Tier 1', name: 'Reception Only', price: 900, hours: 'Up to 5 hours · DJ · Emcee',
+        features: ['Up to 5 hours of DJ service','Professional sound system',{text:'Dance floor lighting',hl:true},'Wireless mic for toasts','First dance & cake-cutting cues','Emcee throughout reception','Printed run of show'] },
+      { tier: 'Tier 2', name: 'Reception + Cocktail Hour', price: 1150, hours: '5 Hours + Cocktail Setup', featured: true, badge: 'Most Popular',
+        features: ['Everything in Tier 1',{text:'8 LED uplights, full room',hl:true},'Dance floor lighting','Dedicated cocktail-hour speaker setup','Curated cocktail-hour playlist','Ambient lighting for cocktail space'] },
+      { tier: 'Tier 3', name: 'Full Wedding Package', price: 1400, hours: 'Ceremony · Cocktail · Reception',
+        features: ['Everything in Tiers 1 & 2',{text:'12 LED uplights + fog / haze',hl:true},'Dance floor lighting','Full ceremony audio setup','Officiant & reader microphones','Ceremony music cues','Processional & recessional','Full event coordination'] }
+    ]);
+
+    /* ---- CORPORATE ---- */
+    renderPackages('corporate-packages', [
+      { tier: 'Standard', name: 'Corporate Standard', price: 1000, hours: 'Up to 4 hours · DJ · Emcee', cta: 'Request Quote',
+        features: ['Up to 4 hours of DJ service','Professional sound system',{text:'4 LED uplights, polished look',hl:true},'Dance floor lighting','Wireless mic for presentations','Emcee & event hosting','Background & upbeat music options','Setup & breakdown included'] },
+      { tier: 'Premium', name: 'Corporate Premium', price: 1600, hours: 'Up to 6 hours · Full Production', featured: true, badge: 'Most Requested', cta: 'Request Quote',
+        features: ['Up to 6 hours of DJ service','Premium sound system',{text:'12 LED uplights + fog / haze',hl:true},'Dance floor lighting','Wireless mic for presentations','Emcee & event hosting','Karaoke add-on available','Setup & breakdown included'] },
+      { tier: 'Custom', name: 'Custom Quote', price: "Let's Talk", hours: 'Any duration · Fully tailored', cta: 'Get a Custom Quote',
+        features: ['Custom hours & duration','Tailored lighting & audio','Multi-room or outdoor options','Mobile bar add-on available','Karaoke add-on available','Full event coordination','Serving all Central Texas'] }
+    ]);
+
+    /* ---- KARAOKE (single card) ---- */
+    renderPackages('karaoke-packages', [
+      { tier: 'Standalone Service', name: 'Karaoke Night', price: 300, hours: 'Up to 3 hours', cta: 'Book Karaoke',
+        features: ['Up to 3 hours of karaoke hosting','Thousands of songs, all genres','Professional audio system','2 wireless microphones','Dedicated karaoke emcee','Setup & breakdown included'] }
+    ]);
+  </script>
+</body>
+</html>
