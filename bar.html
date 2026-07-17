@@ -73,7 +73,7 @@
           <p class="lede reveal">Weddings, receptions and private events. Bartender, mixers, garnishes and glassware included in every package.</p>
         </div>
         <div class="pkg-grid" id="bar-packages"></div>
-        <p class="note center">Prices are starting points, final quote depends on hours, guest count and add-ons. Travel beyond the service area may apply. All prices are subject to applicable sales tax.</p>
+        <p class="note center">Prices are starting points, final quote depends on hours, guest count and add-ons. Guest counts over 65 people may be extra. Travel beyond the service area may apply. All prices are subject to applicable sales tax.</p>
       </div>
     </section>
 
@@ -87,7 +87,7 @@
           <p class="lede reveal">Polished bar service for company parties, holiday events and business functions across Central Texas and the Austin metro.</p>
         </div>
         <div class="pkg-grid" id="corporate-bar-packages"></div>
-        <p class="note center">Prices are starting points. All prices are subject to applicable sales tax.</p>
+        <p class="note center">Prices are starting points. Guest counts over 65 may be extra. All prices are subject to applicable sales tax.</p>
       </div>
     </section>
 
@@ -219,19 +219,19 @@
   <script>
     /* ---- WEDDING / EVENT BAR ---- */
     renderPackages('bar-packages', [
-      { tier: 'Tier 1', name: 'Reception Bar', price: 550, hours: 'Up to 5 hours · 1 Bartender',
+      { tier: 'Tier 1', name: 'Reception Bar', price: 750, hours: 'Up to 5 hours · 1 Bartender',
         features: ['Up to 5 hours of bar service','1 professional bartender',{text:'Mixers, garnishes & supplies included',hl:true},'Glassware & serving equipment','Beer & classic cocktail service up to 5 liquors','Non-alcoholic options available'] },
-      { tier: 'Tier 2', name: 'Reception + Cocktail Hour', price: 725, hours: 'Up to 6 hours · Full Coverage', featured: true, badge: 'Most Popular',
+      { tier: 'Tier 2', name: 'Reception + Cocktail Hour', price: 950, hours: 'Up to 6 hours · Full Coverage', featured: true, badge: 'Most Popular',
         features: ['Everything in Tier 1','Up to 6 hours of bar service',{text:'Cocktail-hour secondary bar setup',hl:true},'Dedicated cocktail-hour service','Wine, choice of liquor & 3 pre-mixed specialty drinks','Signature cocktail consultation','Seamless venue transition'] },
-      { tier: 'Tier 3', name: 'Full Wedding Bar', price: 950, hours: 'Up to 8 hours · Complete Coverage',
+      { tier: 'Tier 3', name: 'Full Wedding Bar', price: 1125, hours: 'Up to 8 hours · Complete Coverage',
         features: ['Everything in Tiers 1 & 2','Up to 8 hours of bar service',{text:'Ceremony, cocktail & reception service',hl:true},'Custom Signature cocktail menu','Full event bar coordination','Premium glassware upgrade'] }
     ]);
 
     /* ---- CORPORATE BAR ---- */
     renderPackages('corporate-bar-packages', [
-      { tier: 'Standard', name: 'Corporate Standard', price: 700, hours: 'Up to 4 hours · 1 Bartender', cta: 'Request Quote',
+      { tier: 'Standard', name: 'Corporate Standard', price: 725, hours: 'Up to 4 hours · 1 Bartender', cta: 'Request Quote',
         features: ['Up to 4 hours of bar service','1 professional bartender',{text:'Mixers, garnishes & supplies included',hl:true},'Glassware & serving equipment','Beer, wine & classic cocktail service up to 5 liquors','3 pre-mixed specialty drinks','Non-alcoholic mocktail menu'] },
-      { tier: 'Premium', name: 'Corporate Premium', price: 1000, hours: 'Up to 6 hours · Full Service', featured: true, badge: 'Most Requested', cta: 'Request Quote',
+      { tier: 'Premium', name: 'Corporate Premium', price: 1250, hours: 'Up to 6 hours · Full Service', featured: true, badge: 'Most Requested', cta: 'Request Quote',
         features: ['Up to 6 hours of bar service','1 professional bartender',{text:'Craft cocktail & mocktail menu',hl:true},'Mixers, garnishes & supplies included','Premium glassware upgrade','Signature cocktail consultation'] },
       { tier: 'Custom', name: 'Custom Quote', price: "Let's Talk", hours: 'Any duration · Fully tailored', cta: 'Get a Custom Quote',
         features: ['Custom hours & bar staffing','Multi-station bar options','Large guest-count pricing','Themed cocktail menus','Bundle with DJ for full service','Serving all Central Texas'] }
