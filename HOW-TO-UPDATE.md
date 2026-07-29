@@ -44,6 +44,26 @@ Live in ~1 minute.
 
 ---
 
+## The SEO files (only matter when pages change)
+
+Three things help Google find me. I mostly leave them alone, but here's when to touch them:
+
+- **`sitemap.xml`** — the list of my pages that I hand to Google. If I ever **add or
+  remove a whole page** (not just text on a page), this file needs the new page added.
+  Each page also has a `<lastmod>` date; bumping it to today's date after a real content
+  change is a nice-to-have, not required.
+- **`robots.txt`** — tells search engines they're welcome and points at the sitemap.
+  Never needs editing.
+- **The tags at the top of each page** — the `<title>`, the description, and the block
+  starting `<script type="application/ld+json">`. These carry my business name, phone,
+  service list and the cities I serve. **If my phone number, email, or service area ever
+  changes, it has to change here too**, not just in the visible text lower down. Search
+  for the old phone number in each HTML file to catch every copy.
+
+Adding or removing a **gallery photo** does not affect any of this.
+
+---
+
 ## If something looks wrong
 
 - Give it a full minute, then refresh the page (on phone: pull down to refresh).
@@ -59,6 +79,7 @@ bigger stuff:
 
 - A new page or section
 - Design / layout / color changes
+- Adding a page (so the sitemap and tags get done properly)
 - Anything where I'm not sure which file to touch
 
 ---
