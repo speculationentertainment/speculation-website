@@ -1,0 +1,577 @@
+@import url("https://djfinder.com/clients/includes/stylesheet_djep12.css");
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Outfit:wght@300;400;500;600&display=swap");
+
+/* ==========================================================================
+   Speculation Entertainment — DJ Event Planner Client Portal Theme
+   Base: Smoked Glass (stylesheet_djep12.css)
+   Brand: black / gold #c9a84c / sapphire #4a90e8
+   Layout: dark chrome, light printable body
+   Contact: contact@speculationentertainment.com · 254-677-6287
+   ========================================================================== */
+
+:root {
+  --se-gold:        #c9a84c;
+  --se-gold-light:  #ecd08a;
+  --se-gold-deep:   #9a7e34;
+  --se-gold-line:   rgba(201, 168, 76, 0.30);
+  --se-gold-hair:   rgba(201, 168, 76, 0.14);
+  --se-blue:        #4a90e8;
+  --se-blue-deep:   #1a4fd0;
+  --se-black:       #060608;
+  --se-black-2:     #101015;
+  --se-paper:       #faf8f3;
+  --se-paper-alt:   #f2eee4;
+  --se-ink:         #16161a;
+  --se-ink-soft:    #4a4a52;
+  --se-rule:        #ddd6c6;
+  --se-display:     'Cinzel', Georgia, serif;
+  --se-sans:        'Outfit', -apple-system, system-ui, Segoe UI, sans-serif;
+}
+
+/* --------------------------------------------------------------------------
+   1. Page shell
+   -------------------------------------------------------------------------- */
+
+body,
+body.djep-body,
+body.djep-body[style*="background-color:"] {
+  background-color: var(--se-black) !important;
+  background-image: none !important;
+  font-family: var(--se-sans) !important;
+  color: var(--se-ink);
+}
+
+#djep-page,
+#djep-wrapper,
+#wrapper {
+  background: var(--se-paper) !important;
+  border: 1px solid var(--se-gold-line) !important;
+  border-radius: 4px;
+  box-shadow: 0 18px 60px rgba(0, 0, 0, 0.55);
+  overflow: hidden;
+}
+
+/* --------------------------------------------------------------------------
+   2. Header — black band, gold rule, logo
+   -------------------------------------------------------------------------- */
+
+#djep-header {
+  background: linear-gradient(180deg, #0a0a0e 0%, var(--se-black) 100%) !important;
+  border-bottom: 2px solid var(--se-gold) !important;
+  padding: 22px 20px 18px !important;
+  text-align: center;
+}
+
+#djep-header img {
+  max-width: 340px !important;
+  width: 100%;
+  height: auto !important;
+  margin: 0 auto !important;
+  display: block;
+}
+
+/* --------------------------------------------------------------------------
+   3. Navigation — black bar, gold links, sapphire hover
+   -------------------------------------------------------------------------- */
+
+#djep-navbar {
+  background: var(--se-black-2) !important;
+  border-bottom: 1px solid var(--se-gold-line) !important;
+  padding: 0 !important;
+}
+
+ul#djep-navigation {
+  margin: 0 !important;
+  padding: 0 !important;
+  text-align: center;
+}
+
+ul#djep-navigation li {
+  background: none !important;
+  border: 0 !important;
+  margin: 0 !important;
+}
+
+#djep-navigation a {
+  color: var(--se-gold) !important;
+  background: transparent !important;
+  font-family: var(--se-sans) !important;
+  font-size: 12px !important;
+  font-weight: 500 !important;
+  letter-spacing: 0.13em !important;
+  text-transform: uppercase !important;
+  padding: 14px 16px !important;
+  border: 0 !important;
+  border-bottom: 2px solid transparent !important;
+  text-shadow: none !important;
+  transition: color 0.18s ease, border-color 0.18s ease;
+}
+
+#djep-navigation a:hover,
+#djep-navigation a:focus {
+  color: #ffffff !important;
+  border-bottom-color: var(--se-blue) !important;
+  background: rgba(74, 144, 232, 0.10) !important;
+}
+
+#djep-navigation a.active,
+#djep-navigation li.active a,
+#djep-navigation a.selected {
+  color: var(--se-black) !important;
+  background: var(--se-gold) !important;
+  border-bottom-color: var(--se-gold-deep) !important;
+}
+
+/* --------------------------------------------------------------------------
+   4. Content surface — light, readable, printable
+   -------------------------------------------------------------------------- */
+
+#djep-content,
+#djep-guestrequestcontent,
+#djep-guestrequestpage {
+  background: var(--se-paper) !important;
+  color: var(--se-ink) !important;
+  font-family: var(--se-sans) !important;
+  font-size: 14px !important;
+  line-height: 1.6 !important;
+  padding: 24px 22px !important;
+}
+
+#welcomeHTML {
+  background: var(--se-paper-alt) !important;
+  border-left: 3px solid var(--se-gold) !important;
+  padding: 16px 18px !important;
+  margin-bottom: 22px !important;
+  color: var(--se-ink) !important;
+}
+
+a { color: var(--se-blue-deep); text-decoration: none; }
+a:hover { color: var(--se-blue); text-decoration: underline; }
+
+.djep-h1, .djep-h2, .djep-h3,
+h1, h2, h3 {
+  font-family: var(--se-display) !important;
+  color: var(--se-ink) !important;
+  letter-spacing: 0.02em !important;
+  font-weight: 600 !important;
+}
+
+.djep-h1, h1 { font-size: 22px !important; }
+.djep-h2, h2 { font-size: 18px !important; }
+.djep-h3, h3 { font-size: 15px !important; }
+
+.djep-p-standard, p { color: var(--se-ink) !important; }
+
+/* --------------------------------------------------------------------------
+   5. Panels — every .djep-*box gets a black/gold heading
+   -------------------------------------------------------------------------- */
+
+.djep-contactdetailsbox,
+.djep-contactformbox,
+.djep-databasebox,
+.djep-documentsbox,
+.djep-guestrequestsettingsbox,
+.djep-latestemailsbox,
+.djep-logindetailsbox,
+.djep-makepaymentbox,
+.djep-managemusicbox,
+.djep-otherfilesbox,
+.djep-othertoolsbox,
+.djep-ourcontactinfobox,
+.djep-paymenthistorybox,
+.djep-paymentsfinancesbox,
+.djep-planneraccessbox,
+.djep-planningformsbox,
+.djep-planningformseditbox,
+.djep-planningformsviewbox,
+.djep-timelinebox,
+.djep-upcomingmeetingsbox {
+  background: #ffffff !important;
+  border: 1px solid var(--se-rule) !important;
+  border-top: 3px solid var(--se-gold) !important;
+  border-radius: 3px !important;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06) !important;
+  margin-bottom: 18px !important;
+  padding: 16px 18px !important;
+}
+
+.djep-databaseheader,
+.djep-databasetableheader {
+  background: var(--se-black) !important;
+  color: var(--se-gold) !important;
+  font-family: var(--se-sans) !important;
+  font-size: 11px !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.12em !important;
+  text-transform: uppercase !important;
+  text-shadow: none !important;
+  border: 0 !important;
+  padding: 9px 12px !important;
+}
+
+/* --------------------------------------------------------------------------
+   6. Tables
+   -------------------------------------------------------------------------- */
+
+table { border-collapse: collapse !important; width: 100%; }
+
+th {
+  background: var(--se-black-2) !important;
+  color: var(--se-gold) !important;
+  font-size: 11px !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.10em !important;
+  text-transform: uppercase !important;
+  text-align: left !important;
+  padding: 9px 11px !important;
+  border: 0 !important;
+}
+
+td {
+  padding: 9px 11px !important;
+  border-bottom: 1px solid var(--se-rule) !important;
+  color: var(--se-ink) !important;
+}
+
+.djep-odd, tr.djep-odd td { background: var(--se-paper-alt) !important; }
+
+.djep-musicresultstable tr:hover td,
+.djep-planningformsbox table tbody tr:hover,
+.djep-timelinebox table tbody tr:hover {
+  background: rgba(201, 168, 76, 0.10) !important;
+}
+
+/* --------------------------------------------------------------------------
+   7. Money rows
+   -------------------------------------------------------------------------- */
+
+.djep-totalfeerow,
+.djep-totalfeerow span,
+.djep-totaldepositrow {
+  background: var(--se-paper-alt) !important;
+  color: var(--se-ink) !important;
+  font-weight: 600 !important;
+}
+
+.djep-balancepaidrow {
+  background: rgba(46, 125, 74, 0.10) !important;
+  color: #1f5c37 !important;
+  font-weight: 600 !important;
+  border-left: 3px solid #2e7d4a !important;
+}
+
+.djep-balanceduerow {
+  background: rgba(201, 168, 76, 0.16) !important;
+  color: #6b5310 !important;
+  font-weight: 700 !important;
+  border-left: 3px solid var(--se-gold) !important;
+}
+
+.djep-esigned { color: #1f5c37 !important; font-weight: 600 !important; }
+
+/* --------------------------------------------------------------------------
+   8. Buttons — gold primary, sapphire secondary
+   -------------------------------------------------------------------------- */
+
+.djep-actionbutton,
+.djep-paymentbutton,
+.djep-planeventbutton,
+.djep-guestsubmit,
+.djep-guestsubmitrequests,
+input[type="submit"],
+button {
+  background: var(--se-gold) !important;
+  background-image: none !important;
+  color: var(--se-black) !important;
+  font-family: var(--se-sans) !important;
+  font-size: 12px !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.10em !important;
+  text-transform: uppercase !important;
+  text-shadow: none !important;
+  border: 1px solid var(--se-gold-deep) !important;
+  border-radius: 3px !important;
+  padding: 9px 18px !important;
+  cursor: pointer;
+  transition: background 0.16s ease, transform 0.16s ease;
+}
+
+.djep-actionbutton:hover,
+.djep-paymentbutton:hover,
+.djep-planeventbutton:hover,
+.djep-guestsubmit:hover,
+input[type="submit"]:hover,
+button:hover {
+  background: var(--se-gold-light) !important;
+  transform: translateY(-1px);
+}
+
+.djep-changebutton,
+.djep-clipboardbutton,
+.djep-paginatebutton,
+.djep-artistsongbuttons,
+.djep-artistsongbuttonswide {
+  background: var(--se-blue) !important;
+  background-image: none !important;
+  color: #ffffff !important;
+  border: 1px solid var(--se-blue-deep) !important;
+  border-radius: 3px !important;
+  font-family: var(--se-sans) !important;
+  font-weight: 500 !important;
+  text-shadow: none !important;
+}
+
+.djep-changebutton:hover,
+.djep-clipboardbutton:hover,
+.djep-paginatebutton:hover {
+  background: var(--se-blue-deep) !important;
+}
+
+.djep-activepaginatebutton {
+  background: var(--se-black) !important;
+  color: var(--se-gold) !important;
+  border-color: var(--se-gold) !important;
+}
+
+.djep-logoutbutton {
+  background: transparent !important;
+  color: var(--se-gold) !important;
+  border: 1px solid var(--se-gold-line) !important;
+  font-size: 11px !important;
+  letter-spacing: 0.10em !important;
+  text-transform: uppercase !important;
+}
+
+.djep-logoutbutton:hover {
+  background: var(--se-gold) !important;
+  color: var(--se-black) !important;
+}
+
+/* --------------------------------------------------------------------------
+   9. Form fields
+   -------------------------------------------------------------------------- */
+
+.djep-input,
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="password"],
+input[type="number"],
+select,
+textarea {
+  background: #ffffff !important;
+  color: var(--se-ink) !important;
+  font-family: var(--se-sans) !important;
+  font-size: 14px !important;
+  border: 1px solid var(--se-rule) !important;
+  border-radius: 3px !important;
+  padding: 8px 10px !important;
+  box-shadow: none !important;
+}
+
+.djep-input:focus,
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: var(--se-gold) !important;
+  outline: 0 !important;
+  box-shadow: 0 0 0 3px rgba(201, 168, 76, 0.20) !important;
+}
+
+/* --------------------------------------------------------------------------
+   10. Countdown clock & timeline
+   -------------------------------------------------------------------------- */
+
+#djep-countdownclock {
+  background: var(--se-black) !important;
+  color: var(--se-gold) !important;
+  font-family: var(--se-display) !important;
+  border: 1px solid var(--se-gold-line) !important;
+  border-radius: 3px !important;
+  padding: 14px !important;
+  text-align: center;
+}
+
+#djep-timelineheadline {
+  font-family: var(--se-display) !important;
+  color: var(--se-ink) !important;
+  border-bottom: 2px solid var(--se-gold) !important;
+  padding-bottom: 8px !important;
+}
+
+.djep-timelineitems {
+  border-left: 2px solid var(--se-gold-hair) !important;
+  padding-left: 16px !important;
+}
+
+.djep-timelineitems:hover {
+  border-left-color: var(--se-gold) !important;
+  background: rgba(201, 168, 76, 0.06) !important;
+}
+
+/* --------------------------------------------------------------------------
+   11. jQuery UI dialogs & accordions
+   -------------------------------------------------------------------------- */
+
+.ui-widget-header {
+  background: var(--se-black) !important;
+  background-image: none !important;
+  color: var(--se-gold) !important;
+  border: 0 !important;
+  border-bottom: 2px solid var(--se-gold) !important;
+  font-family: var(--se-sans) !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.08em !important;
+}
+
+.ui-widget-content,
+.ui-dialog,
+.ui-dialog .ui-dialog-content {
+  background: var(--se-paper) !important;
+  background-image: none !important;
+  color: var(--se-ink) !important;
+  border-color: var(--se-gold-line) !important;
+}
+
+.ui-state-active,
+.ui-state-active a {
+  background: var(--se-gold) !important;
+  background-image: none !important;
+  color: var(--se-black) !important;
+  border-color: var(--se-gold-deep) !important;
+}
+
+.djep-accordionButton {
+  background: var(--se-black-2) !important;
+  background-image: none !important;
+  color: var(--se-gold) !important;
+  border: 0 !important;
+  border-bottom: 1px solid var(--se-gold-hair) !important;
+  font-family: var(--se-sans) !important;
+  font-weight: 500 !important;
+  letter-spacing: 0.06em !important;
+  padding: 11px 14px !important;
+  cursor: pointer;
+}
+
+.djep-accordionButton:hover { background: var(--se-black) !important; color: #ffffff !important; }
+
+.djep-accordionContent { background: #ffffff !important; color: var(--se-ink) !important; padding: 14px !important; }
+
+.ui-progressbar-value { background: var(--se-gold) !important; background-image: none !important; }
+
+/* --------------------------------------------------------------------------
+   12. Music search results
+   -------------------------------------------------------------------------- */
+
+.djep-musicresultrow,
+.djep-musicresultrowmobile { border-bottom: 1px solid var(--se-rule) !important; }
+
+.djep-musiccounterspan {
+  background: var(--se-gold) !important;
+  color: var(--se-black) !important;
+  border-radius: 10px !important;
+  padding: 2px 9px !important;
+  font-weight: 600 !important;
+  font-size: 11px !important;
+}
+
+.djep-music_selections_navigation-active {
+  border-bottom: 2px solid var(--se-gold) !important;
+  color: var(--se-ink) !important;
+  font-weight: 600 !important;
+}
+
+/* --------------------------------------------------------------------------
+   13. Mobile
+   -------------------------------------------------------------------------- */
+
+@media screen and (max-width: 760px) {
+  #djep-page, #djep-wrapper, #wrapper {
+    width: auto !important;
+    margin: 0 !important;
+    border-radius: 0 !important;
+    border-left: 0 !important;
+    border-right: 0 !important;
+  }
+  #djep-header { padding: 16px 12px !important; }
+  #djep-header img { max-width: 240px !important; }
+  #djep-navigation a { padding: 11px 10px !important; font-size: 11px !important; }
+  #djep-content { padding: 16px 13px !important; }
+  th, td { padding: 8px 7px !important; font-size: 13px !important; }
+}
+
+/* --------------------------------------------------------------------------
+   14. Print — strip the dark chrome, black on white
+   -------------------------------------------------------------------------- */
+
+@media print {
+  body, body.djep-body,
+  #djep-page, #djep-wrapper, #wrapper, #djep-content {
+    background: #ffffff !important;
+    color: #000000 !important;
+    box-shadow: none !important;
+    border: 0 !important;
+    width: auto !important;
+    margin: 0 !important;
+  }
+
+  #djep-navbar,
+  ul#djep-navigation,
+  .djep-logoutbutton,
+  .djep-actionbutton,
+  .djep-changebutton,
+  .djep-paymentbutton,
+  .djep-paginatebutton,
+  .djep-clipboardbutton,
+  #djep-countdownclock,
+  .djep-accordianbuttonimage,
+  .djep-accordianbuttonimageright { display: none !important; }
+
+  #djep-header {
+    background: #ffffff !important;
+    border-bottom: 2px solid #000000 !important;
+    padding: 0 0 10px !important;
+  }
+
+  #djep-header img { max-width: 200px !important; }
+
+  .djep-h1, .djep-h2, .djep-h3, h1, h2, h3 { color: #000000 !important; }
+
+  .djep-databaseheader,
+  .djep-databasetableheader,
+  th {
+    background: #ffffff !important;
+    color: #000000 !important;
+    border-bottom: 1.5px solid #000000 !important;
+  }
+
+  td { border-bottom: 1px solid #999999 !important; color: #000000 !important; }
+
+  .djep-contactdetailsbox,
+  .djep-documentsbox,
+  .djep-paymentsfinancesbox,
+  .djep-paymenthistorybox,
+  .djep-planningformsbox,
+  .djep-planningformsviewbox,
+  .djep-timelinebox,
+  .djep-ourcontactinfobox {
+    background: #ffffff !important;
+    border: 0 !important;
+    border-top: 1.5px solid #000000 !important;
+    box-shadow: none !important;
+    page-break-inside: avoid;
+  }
+
+  .djep-odd, tr.djep-odd td { background: #ffffff !important; }
+  .djep-balanceduerow, .djep-balancepaidrow, .djep-totalfeerow {
+    background: #ffffff !important;
+    color: #000000 !important;
+    border-left: 0 !important;
+    border-top: 1px solid #000000 !important;
+  }
+
+  .djep-timelineitems { border-left: 1px solid #000000 !important; page-break-inside: avoid; }
+
+  a { color: #000000 !important; text-decoration: none !important; }
+}
