@@ -18,7 +18,7 @@
 (function () {
   const PROMO = {
     lead: 'Summer Launch',
-    html: 'Book through <strong>September 22, 2026</strong> and take <em>30% off</em> every package<sup>*</sup>, ask about our summer launch discount.',
+    html: 'Book through <strong>September 22, 2026</strong> and take <em>15% off</em> every package<sup>*</sup>, ask about our summer launch discount.',
     fine: '*Discount applies to packages only. Add-ons and à la carte services are excluded.',
     cta: 'Inquire',
     href: '#contact'
